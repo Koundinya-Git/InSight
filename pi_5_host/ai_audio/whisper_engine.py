@@ -24,3 +24,4 @@ class WhisperTranscriber:
         except Exception as e:
             print(f"ERR: Transcription failed: {e}")
             return ""
+        
