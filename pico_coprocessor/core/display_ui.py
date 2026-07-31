@@ -26,13 +26,13 @@ def update_subtitle(text):
     display.fill(0) # Clear the screen with black pixels
     
     display.text("InSight CC:", 0, 0, 1)
-    display.hline(0, 10, 128, 1) # Draw a dividing line under the header
+    display.hline(0, 10, 128, 1) 
     
     lines = wrap_text(text)
     y_offset = 15
     for line in lines:
-        if y_offset < 64: # Prevent text from drawing off the bottom edge
-            display.text(line, 0, y_offset, 1) # 1 = white pixels
+        if y_offset < 64: 
+            display.text(line, 0, y_offset, 1) 
             y_offset += 10
             
     display.show() 
