@@ -1,0 +1,44 @@
+import machine
+import time
+
+class HCSR04:
+    def __init__(self, trigger_pin, echo_pin):
+        # Initialize the hardware pins
+        self.trigger = machine.Pin(trigger_pin, machine.Pin.OUT)
+        self.echo = machine.Pin(echo_pin, machine.Pin.IN)
+        self.trigger.value(0)
+
+    def distance_cm(self):
+        """Pulses the sensor and calculates distance in centimeters."""
+        # Send a 10-microsecond pulse to trigger the sensor
+        self.trigger.value(0)
+        time.sleep_us(5)
+        self.trigger.value(1)
+        time.sleep_us(10)
+        self.trigger.value(0)
+
+        signal_on = 0
+        signal_off = 0
+        
+        # Wait for the echo pin to go HIGH (start of the pulse)
+        timeout = time.ticks_us()
+        while self.echo.value() == 0:
+            signal_off = time.ticks_us()
+            if time.ticks_diff(time.ticks_us(), timeout) > 30000: # 30ms timeout (~5 meters)
+                return -1.0 # Out of range
+                
+        # Wait for the echo pin to go LOW (end of the pulse)
+        timeout = time.ticks_us()
+        while self.echo.value() == 1:
+            signal_on = time.ticks_us()
+            if time.ticks_diff(time.ticks_us(), timeout) > 30000:
+                return -1.0
+
+        # Calculate the time the pulse was active
+        time_passed = time.ticks_diff(signal_on, signal_off)
+        
+        # Speed of sound is ~343 m/s (or 0.0343 cm/microsecond)
+        # Distance = (Time * Speed) / 2 (because it travels there and back)
+        distance = (time_passed * 0.0343) / 2
+        
+        return distance
