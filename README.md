@@ -33,6 +33,8 @@ With a targeted production cost of approximately 15,000 INR per unit, InSight br
 
 <img width="948" height="702" alt="image" src="https://github.com/user-attachments/assets/7ef94ce4-52a9-4b45-9494-c2803ed2f6dc" />
 
+<img width="1024" height="559" alt="Circuit_Diagram" src="https://github.com/user-attachments/assets/6e4cd7b5-3d9b-4311-9f0c-4d1dad6e0671" />
+
 
 ## Bill of Materials
 
