@@ -1,0 +1,9 @@
+# Communication
+pyserial==3.5
+
+# Audio Processing (Whisper)
+openai-whisper==20231117
+
+# Navigation
+gpsd-py3==0.3.0
+
