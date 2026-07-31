@@ -1,0 +1,24 @@
+,,,,
+Item Name,Quantity,Notes/Specifications,Approximate Cost (INR),Approximate Cost (USD)
+Raspberry Pi 5,1,"2GB Model should be enough, downgrading to Whisper Base",7500,80
+Raspberry Pi AI Kit,1,Hailo 13 TOPS M.2 HAT with PCIe cable,7500,80
+Raspberry Pi Pico,1,Micro-controller for I/O hub,400,5
+5MP RGB Camera Module,1,OV5647 with MIPI CSI ribbon cable,500,6
+MEMS Microphone Array,1,"USB plug-and-play (e.g., ReSpeaker)",2500,30
+USB GPS / GNSS Receiver,1,"Standard USB dongle (e.g., u-blox VK-162)",800,10
+Bluetooth Bone-Conduction Headphones,1,Generic wireless headphones,1500,18
+Ultrasonic Distance Sensors,4,RCWL-1601 (3.3V preferred),400,5
+"0.96"" OLED Display",1,I2C SSD1306 module,200,3
+Coin Vibration Motors,2,Standard 3V micro flat motors,100,1.5
+Haptic Motor Drivers / MOSFETs,2,DRV2605L boards or 2N7002/IRLZ44N MOSFETs,200,3
+High-Discharge Power Bank,1,5V/5A Power Delivery (27W+),2000,25
+USB-C Power Cable,1,"Short, high-quality thick-gauge cable",300,4
+Half-Size Solderless Breadboards,2,For initial circuit testing,150,2
+Jumper Wire Kit,1,"Mixed M-M, M-F, F-F dupont wires",200,3
+Perfboard / Protoboard,1,For final soldered Pico connections,50,1
+USB Data Cable,1,Short USB-A to Micro-USB/USB-C for Pico bridge,150,2
+Hardware Fasteners,1,M2.5 brass standoffs and screws,150,2
+FDM 3D Printing Service,1,For Pi 5 enclosure (PETG/ABS),500,6
+SLA / Resin 3D Printing Service,1,For lightweight glasses frame,1500,18
+,,,,
+Total, 26 Parts,~~~~~,26600,304.5
