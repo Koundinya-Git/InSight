@@ -23,7 +23,6 @@ def wrap_text(text, max_chars_per_line=16):
     return lines
 
 def update_subtitle(text):
-    """Clears the screen and renders the incoming Whisper AI text."""
     display.fill(0) # Clear the screen with black pixels
     
     display.text("InSight CC:", 0, 0, 1)
