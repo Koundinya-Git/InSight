@@ -19,7 +19,6 @@ class PicoBridge:
             self.listener_thread.start()
 
     def send_command(self, prefix, payload):
-        """Sends a formatted command string to the Pico."""
         if not self.conn:
             print("ERR: Cannot send command, no connection.")
             return
@@ -29,7 +28,6 @@ class PicoBridge:
         print(f"Host Sent -> {command.strip()}")
 
     def _listen(self):
-        """Runs in the background, reading incoming lines from the Pico."""
         while self.running and self.conn:
             if self.conn.in_waiting > 0:
                 try:
@@ -40,7 +38,6 @@ class PicoBridge:
                     print(f"ERR: Serial read error: {e}")
 
     def close(self):
-        """Safely shuts down the connection."""
         self.running = False
         if self.conn:
             self.conn.close()

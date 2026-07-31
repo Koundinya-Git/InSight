@@ -4,10 +4,7 @@ sensor_left = HCSR04(trigger_pin=14, echo_pin=15)
 
 
 def get_formatted_distances():
-    """
-    Reads the sensors and formats a string for the Pi 5.
-    Example output: DIST:L,85.5
-    """
+
     dist_l = sensor_left.distance_cm()
     
     if dist_l < 0 or dist_l > 400: 

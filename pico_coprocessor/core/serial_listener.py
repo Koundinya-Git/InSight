@@ -20,10 +20,7 @@ def listen_for_commands():
         time.sleep(0.01)
 
 def process_command(cmd_string):
-    """
-    Parses the incoming command and triggers the appropriate hardware response.
-    Format is expected to be PREFIX:PAYLOAD (e.g., CMD:PING or VIB:L,255)
-    """
+
     try:
         prefix, payload = cmd_string.split(":", 1)
     except ValueError:
