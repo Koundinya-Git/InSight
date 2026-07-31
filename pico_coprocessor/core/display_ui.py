@@ -6,10 +6,6 @@ i2c = machine.I2C(0, sda=machine.Pin(4), scl=machine.Pin(5), freq=400000)
 display = SSD1306_I2C(128, 64, i2c)
 
 def wrap_text(text, max_chars_per_line=16):
-    """
-    Splits a long subtitle string into multiple lines to fit the OLED.
-    Standard font width fits about 16 characters per line.
-    """
     words = text.split(' ')
     lines = []
     current_line = ""
