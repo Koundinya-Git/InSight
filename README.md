@@ -25,7 +25,7 @@ I used a dual-processor architecture to guarantee real-time performance without 
 3. **Execution:** Connect the Pico to the Pi 5 via standard USB. Execute `main.py` on the Pi 5 to initiate the system bridge and start the AI processes.
 
 ## Why It Matters
-With a targeted production cost of approximately 10,000 INR, InSight brings unprecedented cost-effectiveness to assistive technology, democratizing access for a wider population. We are not just building a device; we are building a future where technology is a fundamental tool for inclusivity, empowerment, and human flourishing.
+With a targeted production cost of approximately 15,000 INR per unit, InSight brings unprecedented cost-effectiveness to assistive technology, democratizing access for a wider population. We are not just building a device; we are building a future where technology is a fundamental tool for inclusivity, empowerment, and human flourishing.
 
 ## Note
 
